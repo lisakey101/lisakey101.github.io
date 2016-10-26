@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -16,29 +17,113 @@ background: linear-gradient(to bottom,  #146b6c 0%,#43977f 26%,#d9b01c 53%,#2abd
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#146b6c', endColorstr='#2abd8e',GradientType=0 ); /* IE6-9 */
 }
 
+html {
+    font-size: 15px;
+}
+
+.button {
+     background-image: url(./../images/button.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     display: block;
+     width: 250px;
+     height: 150px;
+     margin: 15px auto;
+     color: #fff;
+     font-family: 'Alegreya Sans SC';
+     font-size: 1.8rem;
+     padding: 1.8px 0 0 8px;
+     text-decoration: none;
+}
+
+.button:hover {
+    color: #544222;
+    text-decoration: none;
+}
+
 main {
-    margin: 0 auto;
+    margin: 0 auto 120px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    font-size: 20px;
+    background-color: white;
+    width: 100%;
 }
 
 header {
-    margin: 0.5rem auto 5rem;
-    font-size: 3rem;
+    margin: 0.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    width: 90%;
     text-align: center;
 }
 
+li {
+    margin-top: 4px;
+    display: inline-block;
+}
 
-header a {
+p {
+    margin: 0 20px;
+}
+
+/*NAV*/
+/***********************TAKEOVER CLASSES *****************************/
+
+.closebtn {
+    margin-bottom: 20px;
+    color: #544222;
+    cursor: pointer;
+}
+
+.fa-bars {
+    padding-right: 5px;
+}
+
+.menu-open {
+    cursor: pointer;
+    color: #fff;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(26, 115, 114);
+    background-color: rgba(26, 115, 114, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay a {
     color: #FFFFFF;
-    margin: 2rem;
+     margin: 2rem;
+     display: block;
+     font-size: 1.8rem;
+     text-decoration: none;
 }
 
-header .grow:hover {
-transform: scaleX(2) scaleY(2);
-color: #000;
+.overlay a:hover {
+    color: #544222;
+    text-decoration: none;
 }
 
+.overlay-content {
+    position: relative;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+
+}
+
+/***************************DROPDOWN STUFF**************************************/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -56,7 +141,7 @@ color: #000;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+ /*Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -85,16 +170,120 @@ color: #000;
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    color: #544222;
 }
 
+/***************************************LANDING PAGE****************************************************************************/
+
 .hp-img {
-    width: 400px;
+    width: 300px;
+    margin: 4rem auto 0;
 }
 
 .intro-text {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 20px;
+    color: #fff;
+    font-size: 1.8rem;
     font-weight: bold;
     line-height: 2rem;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 3.5rem;
+}
+
+.explore {
+  font-size: 1.5rem;
+ margin: 3rem auto 0;
+color: #fff;
+
+}
+
+.fa-chevron-down {
+  color: #fff;
+ margin-bottom: 3rem;
+}
+
+/*******************************************************LINEUP************************************************************************/
+
+.support-acts {
+    font-size: 1.8rem;
+    margin-left: 6px;
+}
+
+.headline {
+    font-size: 2.1rem;
+    font-weight: bold;
+    display: block;
+}
+
+/*li.headline:after {
+        display: inline-block;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: transparent url("./../images/diamond.png") no-repeat;
+        background-size: 15px 15px;
+        margin: 0 0 0.5rem 11px;
+}*/
+
+/*li.headline:before {
+        display: inline-block;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: transparent url("./../images/diamond.png") no-repeat;
+        background-size: 15px 15px;
+        margin: 0 11px 0.5rem 0;
+}*/
+
+div.support-acts:after {
+        display: inline-block;
+        content: "";
+        width: 9px;
+        height: 9px;
+        background: transparent url("./../images/diamond.png") no-repeat;
+        background-size: 9px 9px;
+        margin: 0 0 0.3rem 6px;
+}
+
+div.support-acts:before {
+        display: inline-block;
+        content: "";
+        width: 9px;
+        height: 9px;
+        background: transparent url("./../images/diamond.png") no-repeat;
+        background-size: 9px 9px;
+        margin: 0 6px 0.3rem 0;
+}
+
+.tickets {
+    margin-top: 2px;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+
+
+@media only screen
+and (min-width : 800px) {
+/*header {
+        margin: 0.5rem;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+    }*/
+.hp-img {
+    width: 500px;
+}
+
+/*nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}*/
+
 }
