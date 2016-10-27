@@ -70,6 +70,10 @@ p {
     margin: 0 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*NAV*/
 /***********************TAKEOVER CLASSES *****************************/
 
@@ -201,6 +205,10 @@ color: #fff;
 .fa-chevron-down {
   color: #fff;
  margin-bottom: 3rem;
+}
+
+.anchor {
+  padding-top:10px;
 }
 
 /*******************************************************LINEUP************************************************************************/
