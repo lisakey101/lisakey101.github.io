@@ -27,8 +27,8 @@ html {
      background-size: contain;
      display: block;
      width: 250px;
-     height: 150px;
-     margin: 15px auto;
+     height: 50px;
+     margin: 1rem auto 3rem;
      color: #fff;
      font-family: 'Alegreya Sans SC';
      font-size: 1.8rem;
@@ -68,6 +68,19 @@ li {
 
 p {
     margin: 0 20px;
+}
+
+.title {
+     background-image: url(./../images/ribbon.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     display: block;
+     width: 250px;
+     margin: 5px auto;
+     color: #fff;
+     font-size: 1.8rem;
+     padding: 9px 0;
+     text-decoration: none;
 }
 
 a {
