@@ -164,7 +164,7 @@ a {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0px rgba(0,0,0,0.2);
     font-size: 1.5rem;
     font-weight: normal;
 }
@@ -283,7 +283,30 @@ div.support-acts:before {
     font-weight: bold;
 }
 
+/******************************************************el dorado*******************************************************/
 
+.ed-imgs {
+margin: 1rem auto;
+width: 300px;
+height: 216px;
+padding: 0;
+margin: 0;
+position: relative;
+top: -10px;
+left: -10px;
+/*border: 10px solid black;
+border-image: url("./../images/diamond.png") 100 round;*/
+}
+
+.img-wrap {
+  width: 280px;
+  height: 196px;
+  margin: 1.5rem auto;
+  padding: 0;
+  border: 10px solid black;
+  overflow: hidden;
+  border-image: url("./../images/border.png") 10 round;
+}
 
 @media only screen
 and (min-width : 800px) {
